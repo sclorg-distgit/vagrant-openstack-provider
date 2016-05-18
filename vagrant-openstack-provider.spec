@@ -6,7 +6,7 @@
 Summary: Enables Vagrant to manage machines in OpenStack Cloud
 Name: %{?scl_prefix}%{vagrant_plugin_name}
 Version: 0.7.2
-Release: 1%{?dist}
+Release: 2%{?dist}
 Group: Development/Languages
 License: MIT
 URL: https://github.com/ggiamarchi/vagrant-openstack-provider
@@ -106,6 +106,9 @@ cp -a .%{vagrant_plugin_dir}/* \
 %doc %{vagrant_plugin_instdir}/RELEASE.md
 
 %changelog
+* Wed May 18 2016 Dominic Cleal <dominic@cleal.org> 0.7.2-2
+- Rebuild against vagrant with fixed scriptlet paths
+
 * Tue May 17 2016 Dominic Cleal <dominic@cleal.org> 0.7.2-1
 - Initial build
 
